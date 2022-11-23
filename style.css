@@ -1,0 +1,114 @@
+.caption {
+  text-align: center;
+  margin-top: 12.5rem;
+  padding-bottom: 1.25rem;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #a9a9a9;
+}
+
+.my-team .my-team__teaser {
+  margin-top: 4.375rem;
+  padding-left: 0.75rem;
+  font-family: "Poppins";
+  font-style: normal;
+  color: #000000;
+}
+.my-team .my-team__teaser h1 {
+  font-family: "PT Serif";
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 2.9375rem;
+  letter-spacing: -0.045em;
+}
+.my-team .my-team__teaser h2 {
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+  text-transform: uppercase;
+}
+.my-team .my-team__teaser p {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+}
+.my-team .my-team__images {
+  margin-top: 4.375rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.125rem;
+  align-items: center;
+  justify-content: center;
+}
+.my-team .my-team__images .card {
+  font-style: normal;
+  color: #000000;
+}
+.my-team .my-team__images .card .photo {
+  position: relative;
+  width: 215px;
+  height: 315px;
+}
+.my-team .my-team__images .card .photo img {
+  width: 100%;
+  height: 100%;
+}
+.my-team .my-team__images .card .position {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  top: 0;
+  left: 110%;
+  transform: rotate(90deg);
+  transform-origin: 0 0;
+  position: absolute;
+  font-family: "PT Serif";
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  text-transform: uppercase;
+}
+.my-team .my-team__images .card .name {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+}
+.my-team .my-team__images .card--mobile-padded {
+  padding-top: 4.125rem;
+}
+
+@media only screen and (min-width: 761px) {
+  .my-team {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .my-team .my-team__teaser {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: "h1 h2" "h1 p";
+    align-items: center;
+  }
+  .my-team .my-team__teaser h1 {
+    grid-area: h1;
+    margin: 0;
+    align-self: flex-start;
+  }
+  .my-team .my-team__teaser h2 {
+    grid-area: h2;
+    margin: 0;
+  }
+  .my-team .my-team__teaser p {
+    grid-area: p;
+    margin: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
